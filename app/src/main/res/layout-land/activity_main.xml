@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.paul.paul_heijen_pset1.MainActivity">
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Aardappelknats"-->
+        <!--android:id="@+id/textView"-->
+        <!--android:visibility="invisible"-->
+        <!--/>-->
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:id="@+id/relativeLayout"
+        android:layout_centerVertical="true"
+        >
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:srcCompat="@drawable/body"
+            android:id="@+id/body"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:srcCompat="@drawable/hat"
+            android:id="@+id/hat"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:srcCompat="@drawable/eyes"
+            android:id="@+id/eyes"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:srcCompat="@drawable/nose"
+            android:id="@+id/nose"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:srcCompat="@drawable/mouth"
+            android:id="@+id/mouth"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:srcCompat="@drawable/mustache"
+            android:id="@+id/mustache"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:srcCompat="@drawable/shoes"
+            android:id="@+id/shoes"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:srcCompat="@drawable/arms"
+            android:id="@+id/arms"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:srcCompat="@drawable/ears"
+            android:id="@+id/ears"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:srcCompat="@drawable/eyebrows"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/eyebrows" />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:srcCompat="@drawable/glasses"
+            android:id="@+id/glasses"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+        <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="5"
+        android:columnCount="2"
+            android:paddingTop="10dp"
+        android:id="@+id/gridLayout"
+            android:layout_centerVertical="true">
+
+
+    <CheckBox
+        android:text="Arms"
+        android:id="@+id/check_arms"
+        android:onClick="activity"
+        android:paddingRight="80dp"
+        android:saveEnabled="false"/>
+
+    <CheckBox
+        android:text="Ears"
+        android:onClick="activity"
+        android:id="@+id/check_ears"
+        android:saveEnabled="false"/>
+
+    <CheckBox
+        android:text="Eyes"
+        android:onClick="activity"
+        android:id="@+id/check_eyes"
+        android:saveEnabled="false"/>
+
+    <CheckBox
+        android:text="Glasses"
+        android:onClick="activity"
+        android:id="@+id/check_glasses"
+        android:saveEnabled="false"/>
+
+    <CheckBox
+        android:text="Hat"
+        android:onClick="activity"
+        android:id="@+id/check_hat"
+        android:saveEnabled="false"/>
+
+    <CheckBox
+        android:text="Mouth"
+        android:onClick="activity"
+        android:id="@+id/check_mouth"
+        android:saveEnabled="false"/>
+
+    <CheckBox
+        android:text="Mustache"
+        android:onClick="activity"
+        android:id="@+id/check_mustache"
+        android:saveEnabled="false"/>
+
+    <CheckBox
+        android:text="Nose"
+        android:onClick="activity"
+        android:id="@+id/check_nose"
+        android:saveEnabled="false"/>
+
+    <CheckBox
+        android:text="Shoes"
+        android:onClick="activity"
+        android:id="@+id/check_shoes"
+        android:saveEnabled="false"/>
+
+    <CheckBox
+        android:text="Eyebrows"
+        android:onClick="activity"
+        android:id="@+id/check_eyebrows"
+        android:saveEnabled="false"/>
+        </GridLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
